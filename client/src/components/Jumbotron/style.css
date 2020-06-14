@@ -1,0 +1,15 @@
+.jumbotron {
+background-color: transparent;
+background-image: url("../Jumbotron/images/photo-1524578271613-d550eacf6090.jpeg") ;
+opacity: 0.8;
+background-size: cover;
+color: white;
+
+}
+
+h1 {
+    font-size: 5rem;
+    -webkit-text-stroke: 6px salmon;
+    
+
+}
