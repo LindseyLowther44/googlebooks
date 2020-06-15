@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SaveButton from "../components/SaveButton/index";
+import SaveButton from "../components/SaveButton";
 import ViewBtn from "../components/ViewButton";
 import API from "../utils/API";
 import { List, ListItem } from "../components/List";
@@ -56,7 +56,7 @@ class Search extends Component {
       };
     }
 
-    API.saveBook(saveBook)
+    API.saveBook(book)
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   };

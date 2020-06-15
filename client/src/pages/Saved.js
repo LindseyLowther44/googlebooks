@@ -5,9 +5,11 @@ import API from "../utils/API";
 import { List, ListItem } from "../components/List";
 
 class Saved extends Component {
-  state = {
-    books: [],
-  };
+  
+    state = {
+      books: [],
+    }
+  
 
   componentDidMount() {
     this.loadSavedBooks();
@@ -17,7 +19,7 @@ class Saved extends Component {
     API.getAllBooks()
       .then((res) =>
         this.setState({
-          books: res.data,
+          saveBooks: res.data,
         })
       )
       .catch((err) => console.log(err));
